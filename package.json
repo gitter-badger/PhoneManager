@@ -1,0 +1,24 @@
+{
+  "name": "phonemanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/es6-init.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron-compile": "^3.3.6",
+    "material-ui": "^0.16.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-tap-event-plugin": "^1.0.0"
+  },
+  "devDependencies": {
+    "electron-compilers": "^4.0.1",
+    "electron-prebuilt-compile": "^1.4.3",
+    "electron-rebuild": "^1.2.1"
+  }
+}
