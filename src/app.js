@@ -1,26 +1,30 @@
 import * as React from 'react'
 import * as ReactDom from 'react-dom'
 import TopBar from './components/top-bar'
-import TopTabs from './components/tab-container'
+import BottomMenu from './components/bottom-menu'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {cyan500} from 'material-ui/styles/colors';
+import {Box, Page} from 'react-layout-components'
+import AboutPhoneView from './components/about-phone-view'
+
+
 
 const muiTheme = getMuiTheme({
   palette: {
     textColor: cyan500,
-  },
-  appBar: {
-    height: 50,
-  },
+  }
 });
 
 const App = () => (
   <MuiThemeProvider muiTheme={muiTheme}>
-    <div>
+    <Box fit flex column>
       <TopBar />
-      <TopTabs />
-    </div>
+      <Box flexGrow={1}>
+        <AboutPhoneView />
+      </Box>
+      <BottomMenu />
+    </Box>
   </MuiThemeProvider>
 );
 
