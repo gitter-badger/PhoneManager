@@ -5,6 +5,7 @@
   "main": "src/es6-init.js",
   "scripts": {
     "start": "electron .",
+    "debug": "electron . --debug=5858",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,7 +18,10 @@
     "react-tap-event-plugin": "^1.0.0"
   },
   "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
     "electron-compilers": "^4.0.1",
+    "electron-inspector": "^0.1.3",
     "electron-prebuilt-compile": "^1.4.3",
     "electron-rebuild": "^1.2.1"
   }
