@@ -14,7 +14,6 @@ const styles = {
     fontSize: 14,
     paddingLeft: 0,
     alignItems: 'center',
-    paddingLeft: 212
   },
   fontIcon: {
     color: '#FFF',
@@ -24,6 +23,7 @@ const styles = {
 
 const TopBar = () => (
     <Toolbar style={styles.toolbar}>
+      <Box flex="0 0 20%"></Box>
       <Box flex="1 1 0" justifyContent="center">
         <h1 style={styles.title}>Nextbit Robin Phone Manager</h1>
       </Box>
