@@ -4,17 +4,16 @@ import TopBar from './components/top-bar'
 import BottomMenu from './components/bottom-menu'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import {cyan500} from 'material-ui/styles/colors';
 import {Box, Page} from 'react-layout-components'
 import AboutPhoneView from './components/about-phone-view'
+import DefaultCss from './styles'
 
-
-
-const muiTheme = getMuiTheme({
-  palette: {
-    textColor: cyan500,
-  }
-});
+const muiTheme = getMuiTheme(
+  Object.assign({}, {
+    /* Overwrite */
+  },
+  DefaultCss
+));
 
 const App = () => (
   <MuiThemeProvider muiTheme={muiTheme}>
